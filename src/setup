@@ -1,0 +1,8 @@
+#!/bin/bash
+
+perl -MCPAN -e "install File::Copy::Recursive"
+perl -MCPAN -e "install Unicode::Normalize"
+
+cp blkmror blkmror.pl /usr/local/bin
+chmod a+r /usr/local/bin/blkmror.pl
+chmod a+rx /usr/local/bin/blkmror && echo Installation of Black Mirror has been successful!

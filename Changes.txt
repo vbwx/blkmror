@@ -1,0 +1,55 @@
+Wed 2007/08/15, vbwx:
+  * BUGFIX: Modification times for new or changed files are now taken from
+    the source files, i.e., not every file is supposed to be new.
+     -> array splice of stat before every [dir]copy/[dir]move/mkdir stored
+     -> utime changes access+mod time of new/changed file
+
+Wed 2007/08/22, vbwx:
+  * Switch -i ("Only create .BM_Tree file") is now -T
+  * Most file attributes on Mac OS X are preserved
+     -> copy() and move() provided by MacOSX::File::Copy
+  * The "Locked" flag on Mac OS X is recognized as read-only and is excluded
+    from sync/backup procedure if switch -r is active
+
+Thu 2007/10/11, vbwx:
+  * Improved error reports on the command line
+     -> arg_error()
+     -> die() and warn() overridden
+     -> Switch -v lets die() and warn() print the $! variable
+
+Wed 2007/10/17, vbwx:
+  * Directories with extensions in their names are treated like regular files
+    when they are to be archived (to take care of Mac OS X "packages");
+    switch -d deactivates this behavior.
+
+Sat 2007/10/20, vbwx:
+  * BUGFIX: Relative paths (as SRC or TARGET arguments) are resolved to
+    absolute paths first.
+
+Sat 2007/10/27, vbwx:
+  * Security Patch: Entries ".." and "." (with or without leading/trailing
+    slashes) in a .BM_Tree file are skipped.
+
+Mon 2007/10/29, vbwx:
+  * BUGFIX: Symbolic links in any directory (SRC or TARGET) are skipped.
+  * On Windows, Thumbs.db files and on Mac OS X, .DS_Store files are skipped.
+
+Thu 2007/11/01, vbwx:
+  * New switch -a also syncs attributes (Windows & Mac OS X) and modes of
+    files.
+  * New switch -x activates -a but removes x-modes from files.
+
+Fri 2007/11/02, vbwx:
+  * New switch -C deletes archived files in the backup directory.
+  * Files in TARGET not listed in the .BM_Tree file and not found in SRC are
+    always backed up (except when switch -s is set).
+
+Sat 2007/11/03, vbwx:
+  * Files in TARGET that are newer than the .BM_Tree file are always backed up.
+    (Also the user will be notified of that, unless Quiet mode is set.)
+  * Upgrade scripts created, which don't download modules from CPAN first.
+  * Switch -s ("Strict mode, only forward backups") is now -S.
+
+Mon 2013/02/25, vbwx:
+  * Changed installation path to /usr/local/bin
+  * Removed dependency MacOSX::File

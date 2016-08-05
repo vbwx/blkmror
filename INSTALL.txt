@@ -1,0 +1,62 @@
+How To Update Black Mirror
+==========================
+
+If you already have installed this software on your computer, then you can
+simply update it by invoking the upgrade script.
+
+On Unixes, you type:
+	cd <Folder_where_README.txt_is>
+	sudo ./upgrade
+
+And on Windows: (Replace X with the drive letter where README.txt is located.)
+	X:
+	cd <Folder_where_README.txt_is>
+	upgrade <Installation_directory>
+The Installation_directory has to be the one where you have already installed
+the previous version of Black Mirror, of course.
+
+
+How To Install Black Mirror
+===========================
+
+Prerequisites
+-------------
+In order to install Black Mirror you will need at least Perl 5 up and
+running on your system. Version 5.8.* or up with all Core packages is
+recommended. Of course Perl needs to be in your PATH.
+
+Installation on Unixes
+----------------------
+(Applies to Mac OS X, Linux, ...)
+To install, open a command line (Shell on Linux; Terminal on Mac OS X, which
+is in your /Applications/Utilities folder) and type in these commands:
+
+	cd <Folder_where_README.txt_is>
+	sudo ./setup
+
+Here you will be asked for your root (administrator) password.
+And you're done! (In case that didn't work:
+	sudo source setup
+)
+
+Granted that "/usr/bin" is in your $PATH, you should be able to get the
+usage page of Black Mirror by
+
+	blkmror ?
+
+Installation on Microsoft Windows
+---------------------------------
+To install, open a command prompt (located in the Accessories folder, or
+just type [Win]+[R], "cmd", [RETURN])
+Then change to the directory (and the drive) where README.txt and the other
+files of Black Mirror are. So, type something like: (Replace X with the drive
+letter where README.txt is located.)
+
+	X:
+	cd <Folder_where_README.txt_is>
+	setup <Installation_directory>
+
+After you've put the Installation_directory in your PATH, you should be
+able to get the usage page of Black Mirror by
+
+	blkmror ?

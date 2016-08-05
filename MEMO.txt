@@ -1,0 +1,10 @@
+//comment
+// Version #
+/2
+/options
+/...
+\t...
+
+File::Find::find() goes into every directory
+ --> warning occurs when dir has been removed during sub
+ --> simplify copy/move/unlink calls

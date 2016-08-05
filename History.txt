@@ -1,0 +1,35 @@
+Black Mirror 1.2
+(Release date: Sat, Nov 3, 2007)
+  * Mac OS X "packages" are treated like regular files when they are to be
+    archived. (Switch -d deactivates this behavior.)
+  * Relative paths as arguments work properly. [Bugfix]
+  * Improved error reports on the command line.
+  * Symbolic links will not be backed up or synchronized. [Bugfix]
+  * New switches: "Sync attributes/modes of files too", "Remove x-modes
+    from files", "No special treatment for packages", "Clean up backup
+    directory".
+  * Improvements of the backup procedure, including notifications.
+  * Upgrade scripts for an easier updating process.
+
+Black Mirror 1.1
+(Release date: Thu, Aug 23, 2007)
+  * Access/modification time stamps are also being synced now. [Critical
+    Bugfix]
+  * On Mac OS X, attributes are preserved when syncing/backing up and
+    files with the "Locked" flag are regarded as read-only.
+
+Black Mirror 1.0 beta
+(Release date: Fri, Aug 10, 2007)
+Features:
+  * Synchronization of all files between two directories over a "backup
+    directory", which stores the files forever.
+  * Bi-directional backing up to prevent data loss.
+  * Mirroring a directory to another directory, when both contain the
+    global index file, or none. (In this case it will be created.)
+  * Setup scripts for Unixes and Microsoft Windows.
+  * Switches: "Quiet", "Verbose", "Include hidden files", "Include
+    temporary files", "Exclude read-only files", "Exclude backup files",
+    "Exclude log files", "Pretend", "Only create .BM_Tree file", "Strict".
+  * Internet shortcut file that performs a check for updates (online).
+  * Proper handling of hidden files on Microsoft Windows, and support of
+    filenames encoded in normalized UTF-8 on Darwin (Mac OS X).

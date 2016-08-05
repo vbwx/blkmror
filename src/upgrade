@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp blkmror blkmror.pl /usr/bin
+chmod a+r /usr/bin/blkmror.pl
+chmod a+rx /usr/bin/blkmror && echo Black Mirror has been successfully updated!

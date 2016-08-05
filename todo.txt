@@ -1,0 +1,35 @@
+Syncing via USB flash memory
+
+Forward thinking: compare trees to see if a directory has just been renamed or moved
+ --> Tree Check (precheck)
+
+Copy (back up) symlinks!
+ --> save to .BM_Tree (v2)
+
+Preserve attributes/modes
+ --> save to .BM_Tree
+
+-C : Clean up backup device/dir
+ --> Redundant copies (Tree Check)
+ --> Old diffs (Tree Check)
+
+FAT32: Replace forbidden characters (?*:"/\) with underscore and the like
+ --> .BM_Tree (v2)
+
+Unicode support (platform-independent encoding)
+
+Sync PIM data (Plug-in model)
+ --> Mail / Thunderbird, Outlook
+ --> iCal / Sunbird
+ --> Safari / Firefox, IE, Opera, Mozilla
+ --> Notes?
+ --> Contacts?
+
+Integrated software update facility
+ --> Sparkle framework
+
+Compatibility with Time Machine
+ --> Only syncs on Windows?
+
+Universal binary
+ --> Test on Intel Mac

@@ -1,0 +1,2 @@
+Known issues in Black Mirror 1.2:
+  * On non-WinNT systems, blkmror.pl must be in the PATH
